@@ -32,7 +32,8 @@
 			<button type="button">Bear is Better</button>
 		</p>
 		<p>
-			<img src="./images/sketch.jpg" style="width:50%" alt="Sketch"/>
+			<img src="./images/sketch.jpg" style="width:50%" alt="Sketch"/><br>
+			Question 2: I noticed that the form looks sort of different. But everything seems to be working correctly.<br>Question 3: The text highlights, it doesn't put the field into focus. That matters because it makes it easier to use/click and a lot of users would expect that feature to make it simpler for them.<br>Question 6: Code hosted without issue.
 		</p>
 
 	</div>
@@ -47,16 +48,17 @@
 		<input type="date" name="DOB" id = "dob"><br>
 
 		Who is your favorite character in Back to the Future?:<br>
-		<input type="radio" name="character" value="Biff"> Biff<br>
-	  	<input type="radio" name="character" value="Lorraine"> Marty<br>
-	  	<input type="radio" name="character" value="Einstein"> Einstein<br>
+		<input id="Biff" type="radio" name="character" value="Biff"> <label for="Biff">Biff</label><br>
+	  	<!-- <label for="character">Biff</label> -->
+	  	<input id="Marty" type="radio" name="character" value="Marty"> <label for="Marty">Marty</label></br>
+	  	<input id="Einstein" type="radio" name="character" value="Einstein"><label for="Einstein">Einstein</label></br>
 
 
 
 	  	Can you lick your elbow?:<br>
-		<input type="radio" name="drink" value="Yes">Yes and I just did it.<br>
-	  	<input type="radio" name="drink" value="No">No but I just tried.<br>
-	  	<input type="radio" name="drink" value="In-Progress">No but I'm working on it<br>
+		<input id="Yes" type="radio" name="drink" value="Yes"><label for="Yes">Yes and I just did it.</label><br>
+	  	<input id="No-tried" type="radio" name="drink" value="No"><label for="No-tried">No but I just tried.</label><br>
+	  	<input id="No-working" type="radio" name="drink" value="In-Progress"><label for="No-working">No but I'm working on it</label><br>
 	</form>
 
 </body>
