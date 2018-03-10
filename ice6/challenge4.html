@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
 	<meta charset="UTF-8">
 	<title>Challenge 4</title>
     <style>
 
     .errormsg { 
         /*font: Use a cool Google font*/
+        font-family: 'Timmana', sans-serif;
     	color:red;
     	display:none; } 
     </style>
@@ -16,16 +18,16 @@
         var fullname = document.getElementById("fullname");
         var nameError = document.getElementById("nameerrormsg");
         var fullNameValue = fullname.value;
-        if (!fullNameValue)/*same as if fullname.value == ''*/{
-            nameError.style.display = "block";
-
-        } else {
-            nameError.style.display = "none";
-        }
-
         var streetaddr = document.getElementById("streetaddr");
         var addressError = document.getElementById("addrerrormsg");
         var streetaddrValue = streetaddr.value;
+
+
+        if (!fullNameValue) {
+            nameError.style.display = "block";
+        } else {
+            nameError.style.display = "none";
+        }
 
         if (!streetaddrValue) {
             addressError.style.display = "block";
@@ -33,12 +35,10 @@
             addressError.style.display = 'none';
         }
 
-        // if(!fullnameValue || ! streetaddrValue) {
-        //     return false;
+        if (!fullNameValue || !streetaddrValue) {
+            return false;
         }
-
-
-        return false;
+        
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
     }  
     </script>

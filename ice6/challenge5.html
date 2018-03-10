@@ -54,17 +54,12 @@
 		// box.innerHtml = '<strong>' + img.alt + '</strong>';
 	}
 
-	function hideImage(img) {
+	function hideImage() {
 		var box = document.getElementById("image");
-		box.style.backgroundImage = "null"
+		box.style.backgroundImage = null;
 		box.innerText = "Hover over an image below.";
 
 	}
-
-
-
-
-
 
 
 
@@ -80,32 +75,31 @@
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" 
 			alt = "Styling with a Bandana" 
-			tabindex = "1"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			onmouseover = "showImage(this)";
+			onmouseover = "showImage(this)"
 			onmouseout = "hideImage()"
+			tabindex = "1"
 			onfocus = "showImage(this)"
 			onblur = "hideImage()"
 			>
 
-
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
 		<img class = "preview" 
-			alt = "With My Boy"
-			tabindex = "3" 
+			alt = "With My Boy" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";
 			onmouseover = "showImage(this)"
 			onmouseout = "hideImage()"
+			tabindex = "2"
 			onfocus = "showImage(this)"
 			onblur = "hideImage()">
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";
-			tabindex = "2" 
+			alt = "Young Puppy"; 
 			onmouseover = "showImage(this)"
 			onmouseout = "hideImage()"
+			tabindex = "3"
 			onfocus = "showImage(this)"
 			onblur = "hideImage()">
 </body>

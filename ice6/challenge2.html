@@ -25,13 +25,23 @@ Add an if-else statement to your setHomeAddress() function so that when the chec
     
     <script type="text/javascript">
 	   function setHomeAddress(){
-      x = document.getElementById("billing").value; 
+      var x = document.getElementById("billing").value; 
       // nothing happened here
-      y = document.getElementById('home');
-      y.value = x;
-      y.disabled = true;
-      // alert(x) ADD AN IF STATEMENT HERE for Unckeching- look at ICE1
-     }
+      var y = document.getElementById('home');
+      // y.value = x;
+      // y.disabled = true;
+
+      var c = document.getElementById("useBilling").checked
+      
+      if (c == true){
+        y.value = x;
+        y.disabled = true;
+      } else{
+        y.value = "";
+        y.disabled = false;
+      }
+    }
+
     </script>
 </head>
 <body>
