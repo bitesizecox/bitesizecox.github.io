@@ -41,44 +41,28 @@ h2{
 h3{
 	font-weight: 300;
 	font-size:1.1rem;
-	/*padding-bottom: 15px;*/
 }
 
 p {
 	font-family:'Roboto Mono', monospace;
 	font-size: .9rem;
 	line-height: 1.1rem;
-	/*padding-bottom: 30px;*/
 }
 
 header{
 	font-weight: 500;
-	/*box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);*/
+	box-shadow: 0px 18px 26px 1px rgba(0,0,0,.5);
     width: 100%;
 }
 
-
-
-/*change!*/
-/*.top-banner{
-	min-height: 3rem;
-	display: block;*/
-	/*display: none;*/
-/*}*/
-
 .main-content{
-	padding: 200px 20px 0 20px;
+	padding: 150px 20px 0 20px;
 	align-self: center;
 }
 
 #greeting-banner-text{
 	color: rgb(255,255,255);
 	padding-bottom: 15px;
-	/*font-family: "futura-pt-condensed",sans-serif;*/
-/*font-style: normal;*/
-	/*font-weight: 500;*/
-/*	font-weight: 800;*/
-	/*font-size: 3.75em;*/
 	letter-spacing: .5rem;
 	text-transform: uppercase;
 	text-shadow: rgb(228,27,124) -1px 1px,
@@ -94,11 +78,6 @@ header{
 
 /*this is where i started putting stuff here before mobile*/
 
-/*about*/
-
-/*.top-nav{
-	position: fixed;
-}*/
 .about-bg .main-content{
 	padding-top: 100px;
 }
@@ -114,10 +93,6 @@ header{
 	border-radius: 50%;
 	padding-top: 15px;
 }
-
-/*.about .top-nav a{
-	color: white;
-}*/
 
 .about-greeting h3{
 	background-color: rgb(228,27,124);
@@ -155,7 +130,6 @@ header{
 }
 
 .portfolio-btn:hover {
-  /*text-decoration: none;*/
   color: rgb(228,27,124);
 }
 
@@ -166,7 +140,6 @@ header{
 }
 
 .portfolio-content{
-	/*border: 2px solid red;*/
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -202,25 +175,9 @@ header{
 	padding: 20px;
 }
 
-/*.contact-bg .main-content{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr, 2fr;
-	justify-content: center;
-	grid-auto-flow: row;
-}*/
-
-/*.contact-greeting{
-	align-self: end;
-}*/
-
-/*.contact-content{
-	flex:2;
-}*/
 .contact-bg{
 	background-image: url("../images/design_accents/cats.jpg");
 	background-size: 200%;
-	/*background-repeat: no-repeat;*/
 }
 
 .contact-bg .main-content{
@@ -235,24 +192,11 @@ header{
 	background-color: rgba(255, 255, 255, .85);
 	border: 4px solid white;
 	color: purple;
-	/*align-content: stretch;*/
-	/*width: 100%;*/
-	/*padding: .2rem;*/
 }
-
-/*.contact .top-nav{
-	background-color: yellow;
-}*/
 
 .contact-content form{
 	align-self: stretch;
-	/*background-color: white;*/
-	/*border: 2px solid red;*/
-	/*margin: 0;*/
-	/*align-self: center;*/
-	/*padding-bottom: 0,0,0,10px;*/
     display: grid;
-    /*grid-template-columns: 100%;*/
     grid-column-gap: 1em;
 
     grid-template-areas: "name"
@@ -284,23 +228,18 @@ label {
   background-color: white
    }
 
-
 input,textarea {
   box-sizing: border-box;
   display: block;
-  padding: .75em;
+  padding: .75rem;
   width: 100%;
-  /*min-width: 15em;*/
-  background: #fbfbfc;
-  border: 1px solid #E8E9EB;
+  background: rgb(251, 251, 252);
+  border: 1px solid white;
   font-size: 1.2rem; }
 
 textarea {
   resize: vertical;
   outline: none; }
-
-
-
 
 
 /*----Mobile----*/
@@ -313,7 +252,6 @@ textarea {
 .about-bg{
 	background-color: rgb(249,229,0);
 }
-
 
 header.home-page, header.about, header.portfolio, header.contact{
 	flex:1;
@@ -328,19 +266,15 @@ header.about, .portfolio, .contact{
 	background-color: rgb(29,23,86);
 }
 
-
 .top-nav ul{
 	display: block;
 	list-style-type: none;
 }
 
 .top-nav ul li{
-	/*display: block;*/
 	border-top: 3px solid rgb(195,73,155);
-	/*color: #000;*/
 	padding: 10px;
 	text-align: center;
-	/*align-content: center;*/
 }
 
 .top-nav ul li a{
@@ -356,41 +290,21 @@ header.about, .portfolio, .contact{
 .main-content{
 	flex: 5;
 	order: 1;
-	/*align-self: center;*/
-	/*justify-content: space-evenly;*/
 }
-
-
 
 footer{
 	display: none;
 }
 
-
-
-
 /*----Responsive----*/
 
 /*Medium Screen*/
-	@media only screen and (min-width: 650px) and (max-width: 1000px){
+@media only screen and (min-width: 650px) and (max-width: 1000px){
 
-
-
-/*	top-banner{
-		order:3;
-		background color: yellow;
-		height: 100%;
-	}*/
-
-
-
-
-	header.home-page, header.about, header.portfolio, header.contact{
-		/*background-color: rgb(249,229,0); */
+	header.home-page, header.about, 
+	header.portfolio, header.contact{
 		position: fixed;
 		order:2;
-		/*background-color: transparent;*/
-		/*background-color: rgb(29,23,86);*/
 		display: flex;
 		flex-flow: column wrap;
 		justify-content:center;
@@ -398,7 +312,7 @@ footer{
 
 	header.home-page{
 		background-color: rgb(249,229,0);
-}
+	}
 
 	body .about-bg {
 		display: flex;
@@ -407,26 +321,12 @@ footer{
 
 	.main-content{
 		order:3;
-		/*background-color: red;*/
 		align-content: center;
-		/*text-align: center*/
-		/*margin: auto;*/
 	}
 
 	.top-nav{
-		/*background-color: rgb(249,229,0);*/
 		padding: 10px 0;
-		/*width:100%;*/
 	}
-
-/*	.about .top-nav{
-		background-color:rgb(29,23,86);
-	}
-/*
-	.about .top-nav a{
-		color: white;
-	}*/
-
 
 	.top-nav ul{
 		display: flex;
@@ -442,7 +342,6 @@ footer{
 	}
 
 	.about-greeting{
-		/*justify-content: :center;*/
 		display:grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(5, 1fr);
@@ -452,7 +351,6 @@ footer{
 		grid-column: 1/6;
 		width: 75%;
 		grid-row: 1/5;
-		/*grid-row:2;*/
 	}
 
 	.about-greeting .name{
@@ -475,22 +373,17 @@ footer{
 		background-color: black;
 	}
 
-
-
 	.portfolio-content{
 		padding-top: 100px;
-		/*border: 2px solid red;*/
-		/*height: 100%;*/
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		/*justify-items: center;*/
 	}
+
 	.portfolio-content img{
 		max-width:50%;
 	}
 
 	.portfolio-content div{
-		/*background-color: red;*/
 		overflow: hidden;
 	}
 
@@ -519,17 +412,15 @@ footer{
 		grid-row: 5/9;
 	}
 
-	/*.home-page footer{
-		color: white;
-	}*/
-
 	.contact-content form{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 1em;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 1em;
 
-    grid-template-areas: "name     email" "message message" "   .      button"; 
-}
+	grid-template-areas: "name     email"
+						 "message message" 
+						  "   .      button"; 
+	}
 
 	.contact-content form .name {
 		grid-area: name; 
@@ -577,27 +468,20 @@ footer{
 	  outline: none; }
 
 	footer{
-		/*background-color: darkred;*/
-		/*color: black;*/
 		padding: 15px;
 		display:block;
 		order:4;
 		text-align: center;
 	}
+	.portfolio-bg footer, .contact-bg footer, .about-bg footer, .home-bg footer{
+		background-color: black;
+		color: white;
+		}
 
 }
 
 /*Larger Screen*/
-	@media only screen and (min-width: 1000px) {
-
-	/*body .about-bg{
-		flex-flow: row wrap;
-		background-color: red;
-	}*/
-
-	/*top-banner{
-		order:1;
-	}*/
+@media only screen and (min-width: 1000px) {
 
 	header.home-page, header.about, header.portfolio, header.contact{
 		position: fixed;
@@ -613,18 +497,8 @@ footer{
 		background-color: rgb(249,229,0);
 }
 
-	/*header.about{
-		display: block;
-		width: 100%
-	}*/
-
 	.main-content{
 		order:3;
-	}
-
-	.about-bg header{
-		/*position: fixed;*/
-		/*padding-top: 20px;*/
 	}
 
 	.top-nav ul{
@@ -647,22 +521,10 @@ footer{
 		color: rgb(29,23,86);
 	}
 
-/*	.top-nav ul li a{
-		color: white;
-	}*/
-
-/*	.top-nav ul li a{
-		color: black;
-	}*/
-
 	body .about-bg {
 		display: flex;
 		flex-wrap: row wrap;
 	}
-
-/*	.about .top-nav a{
-		color: black;
-	}*/
 
 	.about-greeting{
 		display:grid;
@@ -674,60 +536,28 @@ footer{
 		grid-column: 1/6;
 		width: 75%;
 		grid-row: 1/5;
-		/*grid-row:2;*/
 	}
 
 	.about-greeting .name{
 		grid-column:4/8;
 		grid-row: 2;
-		/*border: 2px solid white;*/
 		align-self: end;
 		font-size: 3rem;
-
 	}
 
 	.about-greeting .pink-bar{
 		grid-column: 4/9;
 		grid-row:3;
 		align-self: start;
-		/*border: 2pt solid red;*/
 		background-color: transparent;
 		color:black;
 		padding: 0;
 		text-align: left;
 		font-size: 2rem;
-		/*font-style: italic;*/
+		font-style: italic;
 		font-family: "futura-pt",sans-serif;
 		font-weight: 300; 
 	}
-
-
-/*
-	body{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-
-	}
-
-	header{
-		grid-column:2/4;
-	}
-
-	footer {
-		grid-column:2;
-		align-self: end;
-	}
-
-	.about-content p{
-		color: red;
-		grid-column:3;
-	}
-
-	.about-greeting{
-		grid-column: 3;
-	}*/
-
-
 
 	.portfolio-content{
 		padding-top: 80px;
@@ -767,8 +597,6 @@ footer{
 	.pic-button-1 button{
 		background-color: red;
 	}
-
-
 
 	.contact-content form{
 	    display: grid;
@@ -816,27 +644,17 @@ footer{
 	  outline: none; }
 
 
-		footer{
-			/*background-color: darkred;
-			/*color: black;*/
-			padding: 15px;
-			display:block;
-			order:4;
-			text-align: center;
-		}
+	footer{
+		padding: 15px;
+		display:block;
+		order:4;
+		text-align: center;
+	}
 
-		/*.about-bg footer p, .portfolio-bg footer p{
-			color: black;
-		}*/
-/*
-		.contact-bg footer{
-			background-color: rgb(29,23,86);
-		}*/
-
-		.portfolio-bg footer, .contact-bg footer, .about-bg footer, .home-bg footer{
-		background-color: black;
-		color: white;
-		}
+	.portfolio-bg footer, .contact-bg footer, .about-bg footer, .home-bg footer{
+	background-color: black;
+	color: white;
+	}
 
 }
 
