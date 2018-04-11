@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	overflow: scroll;
+}
+
+a{text-decoration: none;}
+
+body, h1, h2, h3, nav, main, header, ul, li, p {
+	padding: 0; margin: 0;
+}
+
+body{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+p {
+	font-family:'Roboto Mono', monospace;
+	font-size: .9rem;
+	line-height: 1.1rem;
+}
+
+a, h1 {
+	font-family: "futura-pt",sans-serif;
+}
+
+h1{
+	font-size: 4rem;
+	color: rgb(255,255,255);
+	padding-bottom: 15px;
+	letter-spacing: .5rem;
+	text-transform: uppercase;
+	text-shadow: rgb(228,27,124) -1px 1px,
+    rgb(228,27,124) -2px 2px,
+    rgb(228,27,124) -3px 3px,
+    rgb(228,28,125) -4px 4px,
+    rgb(228,29,126) -5px 5px,
+    rgb(228,30,127) -6px 6px,
+    rgb(228,31,128) -7px 7px,
+    rgb(228,32,129) -8px 8px;
+}
+
+/*mobile*/
+
+header{
+	background-color: #F98A5F;
+	width: 100%;
+	order: 3;
+	max-height: 300px;
+	text-align: center;
+	align-self: flex-end;
+	box-shadow: 0px -13px 20px 1px rgba(0,0,0,.35);
+}
+
+.top-nav ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.top-nav ul li{
+	padding: 15px 0;
+	width: 100%;
+	border-bottom: 1.5px dotted #F8E1B4;
+}
+
+.top-nav ul li a{
+	color: #442D65;
+}
+
+.home-page{
+	background-color: #775BA3
+}
+
+.main-content{
+	width: 100%;
+	order: 2;
+	align-self: center;
+	/*margin-top: 75px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.home-page p{
+	line-height: 1.5rem;
+	color: #F8E1B4;
+}
+
+.top-banner{
+	border: 2px solid red;
+	width: 100%;
+	order: 1;
+	height: 115px;
+	background-image: url(../images/design_accents/home-banner-top.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	z-index: 999;
+	box-shadow: 0px 18px 26px 1px rgba(0,0,0,.5);
+}
+
+footer{
+	width: 100%;
+	display: none;
+}
+
+
+
+
+@media only screen and (min-width: 650px) and (max-width: 1000px){
+
+	header{
+		border: 2px solid red;
+		order: 2;
+		box-shadow: 0px 13px 20px 1px rgba(0,0,0,.35);
+		align-self: flex-start;
+		height: auto;
+		/*text-align: center;*/
+	}
+
+	.main-content{
+		border: 2px solid red;
+		order:3;
+	}
+
+	footer{
+		border: 2px solid red;
+		order:4;
+		display: block;
+		background-color: #442D65;
+		text-align: center;
+		padding: 5px;
+		align-self: flex-end;
+	}
+
+	.top-nav ul{
+		flex-wrap: nowrap;
+		width: 75%;
+		/*justify-content: : center;*/
+	}
+
+	.top-nav{
+
+	}
+}
+
+
+@media only screen and (min-width: 1000px){
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
