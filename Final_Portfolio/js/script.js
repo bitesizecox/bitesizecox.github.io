@@ -1,5 +1,5 @@
 // function() {
-// 		var selectedClass = "";
+		// var selectedClass = "";
 // 		"portfolio-btn".click(function(){ 
 // 			selectedClass = $(this).attr("data-rel"); 
 //      	".portfolio-content".fadeTo(100, 0.1);
@@ -34,10 +34,9 @@
 // Author: Scott Newcomer 3/1997
 // Email: nuke@bright.net
 // //
-// function showImage(){
-//     document.getElementsByClassName('loadingImage').style.visibility="visible";
-// }
-
-// function hideImage(){
-// 	document.getElementsByClassName('loadingImage').style.visibility="hidden";
-// }
+function showImage(image){
+		document.getElementById('p-image').style.visibility="visible";
+	}
+	function hideImage(image){
+		document.getElementById('p-image').style.visibility="hidden";
+	}
