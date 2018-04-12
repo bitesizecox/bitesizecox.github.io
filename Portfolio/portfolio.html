@@ -11,6 +11,19 @@
 </head>
 
 <body class="portfolio-bg">
+
+	<script type="text/javascript">
+			function showImage(){
+				document.getElementById("p-image-1").style.visibility="visible";
+			}
+
+			function hideImage(){
+				document.getElementById("p-image-1").style.visibility="hidden";
+			}
+
+		</script>
+
+
 	<header class="portfolio">
 
 		<nav class="top-nav">
@@ -23,30 +36,23 @@
 		</nav>
 	</header>
 
-	<!-- <div class="top-banner">
-		</div> -->
+	<div class="top-banner">
+		</div>
 
 	<section class="main-content">
-		<!-- <div class="top-banner">
-		</div> -->
-
-		<!-- <div class="portfolio-greeting">
-			<h2>Graphic Design Work</h2>
-		</div> -->
-		<!-- <div class="toolbar mb2 mt2">
-		  <button class="portfolio-btn" href="" data-rel="all">All</button>
-		<div class="toolbar mb2 mt2">
-		  <button class="portfolio-btn" href="" data-rel="portfolio-one">Graphic Design</button>
-		</div>
-		<div>
-		<button class="portfolio-btn" data-rel="portfolio-two">UX</button> -->
-	<!-- </div> -->
 
 		<div class="portfolio-content portfolio-one all">
 
 			<div class="p-content1 work">
-        		<img id="p-image-1" class="p-content2" src="./images/thumbnails/livewell-tn.png" alt="illustration of man running">
-			</div>
+
+				<img id="p-image-1" src="./images/portfolio_jpgs/livewell.jpg" alt="illustration of man running">
+
+				<input type="button" value="zoom" class="button" onclick="showImage()"/>
+				<input type="button" value="x" class="button" onclick="hideImage()"/>
+        	
+
+        	</div>
+
 			<div class="p-content2 work">
 				<img id="p-image-2" src="./images/thumbnails/volt-tn.png" alt="Volt magazine ad">
 			</div>
@@ -77,7 +83,7 @@
 	</footer>
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<!-- <script type="text/javascript" src="js/script.js"></script> -->
 
 
 </body>
