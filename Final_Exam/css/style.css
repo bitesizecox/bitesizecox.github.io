@@ -2,24 +2,42 @@ body{
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
+	background-image: url("../images/sun-pattern.png");
+	/*align-items: flex-start;*/
 }
 
 p, img, form, h1 {
 	margin: 0;
+	padding: 0;
 }
 
 h1{
 	width: 100%;
+	/*border: 2px solid red;*/
+	height: 50px;
 }
 
 .image1 {
 	/*width: 50%;*/
 	border: 5px solid blue;
 	padding: 5%;
+	height: 325px;
+	/*border: 2px solid red;*/
 }
 
 .image2 {
 	/*width: 50%;*/
 	border: 5px solid blue;
 	padding: 5%;
+	height: 325px;
+	/*border: 2px solid red;*/
+}
+
+.image img{
+	width: 50%;
+}
+
+.button{
+	width: 100%;
+	/*border: 2px solid red;*/
 }

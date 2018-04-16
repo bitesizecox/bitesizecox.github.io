@@ -2,18 +2,28 @@
 <HTML>
 <head>
 	<link rel="stylesheet" href="./css/style.css">
+	<title>Final Exam</title>
+	<script>
+		function hideImage(img){
+			var image = document.getElementById("image").style.visibility="hidden";
+		}
+
+		function showImage(img){
+			var image = document.getElementById("image").style.visibility="visible";
+		}
+	</script>
 </head>
 <body>
 	<h1>Meaghan Cox</h1>
-	<div class="image1">
+	<div id=image class="image1">
 		<img src="./images/examPic.JPG" alt="exam pic">
 	</div>
 	<div class="image2">
 		<img src="./images/UMSI-logo.jpg" alt="exam pic">
 	</div>
 	<div class="button">
-		<button type="button">Hide Image</button>
-		<button type="button">Show Image</button>
+		<button type="button" onclick="hideImage()">Hide Image</button>
+		<button type="button" onclick="showImage()">Show Image</button>
 	</div>
 
 
