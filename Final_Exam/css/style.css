@@ -1,8 +1,25 @@
 body{
 	display: flex;
 	flex-flow: row wrap;
+	width: 100%;
+}
+
+p, img, form, h1 {
+	margin: 0;
 }
 
 h1{
 	width: 100%;
+}
+
+.image1 {
+	/*width: 50%;*/
+	border: 5px solid blue;
+	padding: 5%;
+}
+
+.image2 {
+	/*width: 50%;*/
+	border: 5px solid blue;
+	padding: 5%;
 }
