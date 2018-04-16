@@ -1,0 +1,8 @@
+body{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+h1{
+	width: 100%;
+}
