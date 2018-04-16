@@ -3,7 +3,6 @@ body{
 	flex-flow: row wrap;
 	width: 100%;
 	background-image: url("../images/sun-pattern.png");
-	/*align-items: flex-start;*/
 }
 
 p, img, form, h1 {
@@ -11,10 +10,11 @@ p, img, form, h1 {
 	padding: 0;
 }
 
-h1{
+.greeting{
 	width: 100%;
 	/*border: 2px solid red;*/
-	height: 50px;
+	/*height: 50px;*/
+	display: block;
 }
 
 .image1 {
@@ -33,9 +33,9 @@ h1{
 	/*border: 2px solid red;*/
 }
 
-.image img{
+/*.image img{
 	width: 50%;
-}
+}*/
 
 .button{
 	width: 100%;
