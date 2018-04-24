@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+	<header>
+		<h1>Accessibility Review</h1>
+		<a href="http://alumnus.alumni.umich.edu/notable-alumni/" target="_blank"><h2>Conducted on Univeristy of Michigan's Notable Alumni Website</h2></a>
+		<img src="./images/home.png" alt="Notable Alumni Home Screen">
+	</header>
+
+	<section class="main">
+		<h3 class="designers">Designers</h3>
+		<ul>
+			<li>Make sure there is enough contrast between text and its background color</li>
+			<li>Pair values of colors together (not only hues) to increase contrast</li>
+			<li>Design focus states to help users navigate and understand where they are</li>
+		</ul>
+		<div class="writeup">
+		<h4>Color Contrast</h4>
+		<p class="one">There was a sufficient amount of color contrast lacking in the text on the flyout menu in the upper right corner and on the '+' icons that inform about the expanding menus:
+		</p>
+		<div class="examples menu">
+		<img class="menu" src="./images/menu.png" alt="Flyout Menu">
+		<img class="icon" src="./images/icons.png" alt="Icon">
+		</div>
+		<p class="two">The colors used are so faint that is very easy to miss these visual indicators on the screen. Increasing the color contrast would help those who suffer from visual imparements to better recognize these signifiers that let them operate the site. Additionally, it would help to enhance the visual design, giving a greater sense of balance and cohesion.
+		</p>
+		<h4 class="three">Tab &amp; Focus</h4>
+		<p class="3"> A big issue on this site was that users cannot tab through the main content if any of the expandable menus are closed. Additionally, if the menus are open, tabbing only takes the user to content with embedded links.</p>
+		<p class="four"> I highly recommend implementing more detailed tab-index functionality within the html code that will allow users to navigate to important content that can be read by screen readers. This would include denoting the html main content with the proper tag elements that could be tabbed to automatically, or alternatively the tab index could be hard coded into each element.</p>
+		<p class="five">The designer could go an extra mile to further increase accessibility by implementing the pseudo class :focus in order to bring additional attention to tabbed items. For example, the items in focus could be gently highlighted with a faint/transparent red color. This would create enough color and grayscale contrast to draw attention to the element while simultaneously remaining unabraisive to the eye and unhindering to the overall design.</p>
+	</div>
+
+
+		<h3>Tools</h3>
+		<h4>Use these tools to help make your work accessible:</h4>
+		<ul>
+		 <li>
+		 	<a href="http://code.viget.com/interactive-wcag/#responsibility=designlevel=aa" target="_blank">WCAG 2.0 guidelines to review best practices</a></li>
+		 <li>
+		 	<a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US" target="_blank">WAVE (Web Accessibility Evaluation Tool) Chrome Extension to check accessibility across your products</a></li>
+		 <li>
+		 	<a href="http://achecker.ca/checker/index.php" target="_blank">Web Accessibility Checker to check accessibility across your products</a></li>
+		 <li>
+		 	<a href="https://www.paciellogroup.com/resources/contrastanalyser/" target="_blank">Color Contrast Analyzer App to analyze color contrast</a></li>
+		 <li>
+		 	<a href="https://accessibility.oit.ncsu.edu/tools/color-contrast/" target="_blank">Color Palette Accessibility Checker to automatically check color combinations for passing contrast</a></li>
+		 <li>
+		 	<a href="https://accessibility.oit.ncsu.edu/tools/color-extractor/" target="_blank">Color Extractor bookmarklet to find all colors in CSS and load them in the Color Palette Accessibility Checker</a></li>
+		 <li>
+		 	<a href="http://achecker.ca/checker/index.php" target="_blank">Web Accessibility Checker to check accessibility across your products</a></li>
+		 <li>
+		 	<a href="http://colorsafe.co/" target="_blank">Color Safe to make accessible color palettes</a></li>
+		 <li>
+		 	<a href="http://colororacle.org/index.html" target="_blank">Color Oracle to simulate color blindness</a></li>
+		 <li>
+		 	<a href="https://michelf.ca/projects/sim-daltonism/" target="_blank">Sim Daltonism to simulate color blindness</a></li>
+		 <li>
+		 	<a href="http://www.brandwood.com/a11y/" target="_blank">Text over images accessibility tool</a></li>
+		</ul>
+	</section>
+	<footer>
+		<p>Author: Meaghan Cox &copy;     |     Master's Candidate UX Research &amp; Design     |     <a href="https://www.si.umich.edu/University Of Michigan School of Information">University of Michigan School of Information</a>
+		</p></footer>
+
+
+</body>
+</html>
