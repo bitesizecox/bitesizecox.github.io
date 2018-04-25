@@ -1,9 +1,13 @@
 body{
 	margin: 2%;
 	border: 1px solid black;
-	font-family: 'Open Sans', sans-serif;
 	margin: 5% 7%;
 	margin-bottom:0px;
+}
+
+ul, p, h1, h2, h3, h4, a{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 a {
@@ -18,6 +22,10 @@ a:hover{
 
 header{
 	text-align: center;
+}
+
+h1, h2, h3{
+	font-weight: 700;
 }
 
 h1{
@@ -36,12 +44,21 @@ header h2{
 
 h3{
 	margin-bottom: 0px;
+	font-size: 1.3rem;
 }
 
 h4{
-	font-style: italic;
 	margin-bottom: 0px;
+	margin-top: 20px;
+	font-style: italic;
+}
+
+.tools{
 	margin-top: 10px;
+}
+
+h3.tools{
+	margin-top: 3%;
 }
 
 ul{
@@ -54,8 +71,12 @@ header img{
 }
 
 section{
-	margin: 7%;
+	margin: 4% 7% 7%;
 	min-height: 100%;
+}
+
+.one, .three {
+	margin-top: 5px;
 }
 
 .examples{
