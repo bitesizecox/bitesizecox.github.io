@@ -118,11 +118,21 @@ footer p{
 	font-size: .8em;
 }
 
-
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 900px) and (max-width: 1300px){
 
 	.content{
-		margin: 3% 20% 0;
+		margin: 3% 12% 0;
+		/*margin: 5% 7% 0;*/
+		/*max-width: 100vh;		*/
+	}
+
+}
+
+
+@media only screen and (min-width: 1300px){
+
+	.content{
+		margin: 2% 20% 0;
 		/*max-width: 100vh;		*/
 	}
 
