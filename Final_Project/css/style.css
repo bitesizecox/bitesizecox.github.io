@@ -29,7 +29,6 @@ h1, h2, h2 a, h3{
 }
 
 h1{
-	text-align: center;
 	color: #260126;
 	margin-bottom: 5px;
 	margin-top: 40px;
@@ -54,15 +53,15 @@ h4{
 }
 
 .tools{
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 h3.tools{
 	margin-top: 3%;
 }
 
-ul{
-	margin-top:10px;
+ul {
+	margin-top:5px;
 }
 
 header img{
