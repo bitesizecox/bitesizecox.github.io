@@ -14,10 +14,6 @@ a {
 	text-decoration: none;
 	color:darkblue;
 }
-/*
-h2 a {
-	color:#59323C;
-}*/
 
 a:hover{
 	text-decoration: underline;
@@ -80,7 +76,7 @@ section{
 }
 
 .one, .three {
-	margin-top: 5px;
+	margin-top: 0px;
 }
 
 .examples{
