@@ -89,6 +89,10 @@ section{
 	max-width: 60%;
 }
 
+img.icon {
+	max-width: 8%;
+}
+
 img.menu{
 	margin-right: 7%;
 }
